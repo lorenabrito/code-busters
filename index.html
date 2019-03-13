@@ -6,16 +6,28 @@
 <body>
 	<h1>Welcome Hoomans!</h1>
 
-<div id="wrapper">
-	<h2>Michelle</h2>
-		<button>getElement by ID with a button</button>
-		<button>getElement by class with a button</button>
-	<h2>Lorena</h2>
-		<button>getElement by ID with a button</button>
-		<button>getElement by class with a button</button>
-</div>
+	<div id="wrapper">
+		<h2>Michelle</h2>
+			<button>getElement by ID with a button</button>
+			<button>getElement by class with a button</button>
+		<h2>Lorena</h2>
+			<button onclick="sexyButterFunction()">getElement by ID with a button toggle</button>
+				<div id="butter"><img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/></div>
 
-<footer>Busted Code created by Michelle (enter phonetic spelling here) + Lorena</footer>
+			<button>getElement by class with a button</button>
+	</div>
 
+	<footer>Busted Code created by Michelle (enter phonetic spelling here) + Lorena</footer>
+	
+	<script> 
+		//set function to listen for when sexyButterFunction() is clicked in the content 
+		function sexyButterFunction(){
+			//set variable to that javascript will select when this function is fired
+			var sexyButter = document.getElementbyID('#butter');
+
+			//set condition to hide and show in other words toggle element 
+		}
+		
+	</script>
 </body>
 </html>
