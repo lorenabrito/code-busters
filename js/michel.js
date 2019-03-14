@@ -1,4 +1,4 @@
-function tacoDanceFunction() {
+function tacoDanceFunction('taco') {
 
 	var tacoDance = document.getElementById('taco');
 	if(tacoDance.style.display == 'none') {
