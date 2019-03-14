@@ -1,10 +1,10 @@
 function tacoDanceFunction('taco') {
 
 	var tacoDance = document.getElementById('taco');
-	if(tacoDance.style.display == 'none') {
-		tacoDance = 'block';
+	if(tacoDance.style.display == 'block') {
+		tacoDance = 'none';
 	} else {
-		tacoDance = 'none'
+		tacoDance = 'block'
 	}
 }
 
