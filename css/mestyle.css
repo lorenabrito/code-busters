@@ -3,9 +3,19 @@ body {
 }
 
 #wrapper {
+	align-content: space-between;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.michelle {
+	width: 40%;
+}
+
+.lorena {
+	width: 40%;
 }
 
 #taco {
