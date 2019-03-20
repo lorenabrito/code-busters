@@ -1,7 +1,9 @@
 body {
-	background-color:pink;
+	background-color: #ccc;
+	color: orange;
 }
 
+
 #butter {
-	display:block;
+	display: block;
 }
