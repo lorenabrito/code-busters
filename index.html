@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Code Busters</title>
+	<link src="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<h1>Welcome Hoomans!</h1>
@@ -12,7 +13,9 @@
 			<button>getElement by class with a button</button>
 		<h2>Lorena</h2>
 			<button onclick="sexyButterFunction()">getElement by ID with a button toggle</button>
-				<div id="butter"><img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/></div>
+				<div id="butter">
+					<img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/>
+				</div>
 
 			<button>getElement by class with a button</button>
 	</div>
@@ -23,9 +26,18 @@
 		//set function to listen for when sexyButterFunction() is clicked in the content 
 		function sexyButterFunction(){
 			//set variable to that javascript will select when this function is fired
-			var sexyButter = document.getElementbyID('#butter');
+			var sexyButter = document.getElementById("butter");
 
 			//set condition to hide and show in other words toggle element 
+			//1st check if gif is hidden, if hidden, then show
+			//2nd else if gif is showing, then hide
+			if (sexyButter.style.display == "none" ){
+				//show gif
+				sexyButter.style.display = "block";
+			} else {
+				//hide gif
+				sexyButter.style.display = "none";
+			}
 		}
 		
 	</script>
