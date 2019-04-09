@@ -1,9 +1,48 @@
+/*
+Stricking and Simple 
+#0b0c10
+#1f2833
+#c5c6c7
+#66fcf1
+#45a29e
+*/
+
+
 body {
-	background-color: #ccc;
-	color: orange;
+	background-color: #0b0c10;
 }
 
+h1,
+h2,
+p,
+footer {
+	color: white;
+}
 
-#butter {
-	display: block;
+img {
+	max-width:200px;
+}
+
+button {
+	background-color: orange;
+	border: none;
+	padding: 10px;
+}
+
+#wrapper {
+	display: flex;
+}
+
+/* MICHELLE */
+#michelle{
+
+}
+
+/* LORENA */
+#lorena {
+
+}
+
+.cute-cookie {
+	display: inline-block;
 }
