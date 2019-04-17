@@ -13,10 +13,14 @@ body {
 }
 
 h1,
-h2,
+h2 {
+	font-family:'Caveat', sans-serif;
+	color: white;
+}
+
 p,
 footer {
-	color: white;
+	font-family:'Hind+Guntur', sans-serif;
 }
 
 img {
@@ -43,6 +47,6 @@ button {
 
 }
 
-.cute-cookie {
+.cookies {
 	display: inline-block;
 }

@@ -3,6 +3,8 @@
 <head>
 	<title>Code Busters</title>
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
+	<!-- Let me know if you like these fonts --> 
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Hind+Guntur" rel="stylesheet">
 </head>
 <body>
 	<h1>Welcome Hoomans!</h1>
@@ -21,14 +23,14 @@
 						<img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/>
 					</div>
 
-				<button>getElement by class with a button</button>
-				<div class="cute-cookie">
+				<button onclick="cuteCookiesFunction()">getElement by class with a button</button>
+				<div class="cookies">
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxvan4-u_I2PoVt3cfTtfX5EpyE3IYCPeSg1EH5qfLoXC1q2MOw"/>
 				</div>
-				<div class="cute-cookie">
+				<div class="cookies">
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxvan4-u_I2PoVt3cfTtfX5EpyE3IYCPeSg1EH5qfLoXC1q2MOw"/>
 				</div>
-				<div class="cute-cookie">
+				<div class="cookies">
 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxvan4-u_I2PoVt3cfTtfX5EpyE3IYCPeSg1EH5qfLoXC1q2MOw"/>
 				</div>
 		</div>						
@@ -53,6 +55,28 @@
 				sexyButter.style.display = "none";
 			}
 		}
+
+		//set function to listen for when cuteCookiesFunction() is clicked in the content 
+		function cuteCookiesFunction(){
+			//set variable to that javascript will select when this function is fired
+			var cuteCookies = document.getElementsByClassName("cookies");
+
+			//set condition to hide and show in other words toggle element 
+			//1st check if gif is hidden, if hidden, then show
+			//2nd else if gif is showing, then hide
+			// if (cuteCookies.style.display == "none" ){
+			// 	//show picture
+			// 	cuteCookies.style.display = "block";
+			// } else {
+			// 	//hide picture
+			// 	cuteCookies.style.display = "none";
+			// }
+		}
+
+		// function cuteCookiesFunction() {
+		// 	var cuteCookies = document.getElementsByClassName("cookies");
+		// 	element.classList.toggle("cookies");
+		// }
 		
 	</script>
 </body>
