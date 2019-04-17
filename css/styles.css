@@ -1,10 +1,10 @@
 /*
 Stricking and Simple 
-#0b0c10
-#1f2833
-#c5c6c7
-#66fcf1
-#45a29e
+#0b0c10 / black blue /
+#1f2833 / dark blue /
+#c5c6c7 / gray / 
+#66fcf1 / mint teal /
+#45a29e / teal /
 */
 
 
@@ -21,6 +21,7 @@ h2 {
 p,
 footer {
 	font-family:'Hind+Guntur', sans-serif;
+	color: white;
 }
 
 img {
@@ -28,25 +29,31 @@ img {
 }
 
 button {
-	background-color: orange;
+	background-color: #66fcf1;
 	border: none;
 	padding: 10px;
 }
 
 #wrapper {
 	display: flex;
+	flex-direction: row;
 }
 
 /* MICHELLE */
 #michelle{
-
+	flex-grow: 0.5;
+	flex-direction: row;
+	padding: 25px;
 }
 
 /* LORENA */
 #lorena {
-
+	flex-grow: 0.5;
+	flex-direction: row;
+	padding: 25px;
 }
 
 .cookies {
 	display: inline-block;
+	flex-wrap: nowrap;
 }
