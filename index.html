@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Busters</title>
+	<link href="css/styles.css" type="text/css" rel="stylesheet">
+	<!-- Let me know if you like these fonts --> 
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Hind+Guntur" rel="stylesheet">
+</head>
+<body>
+	<h1>Welcome Hoomans!</h1>
+
+	<div id="wrapper">
+		<div id="michelle">
+			<h2>Michelle</h2>
+				<button>getElement by ID with a button</button>
+				<button>getElement by class with a button</button>
+		</div>
+
+		<div id="lorena">
+			<h2>Lorena</h2>
+				<div class="row">
+					<button onclick="sexyButterFunction()">getElement by ID with a button toggle</button>
+						<div id="butter">
+							<img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/>
+						</div>
+				</div>
+
+				<div class="row">
+					<button onclick="cuteCookiesFunction()">getElement by class with a button</button>
+					<div class="cookies">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxvan4-u_I2PoVt3cfTtfX5EpyE3IYCPeSg1EH5qfLoXC1q2MOw"/>
+					</div>
+					<div class="cookies">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxvan4-u_I2PoVt3cfTtfX5EpyE3IYCPeSg1EH5qfLoXC1q2MOw"/>
+					</div>
+					<div class="cookies">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxvan4-u_I2PoVt3cfTtfX5EpyE3IYCPeSg1EH5qfLoXC1q2MOw"/>
+					</div>
+				</div>
+		</div>						
+	</div>
+
+	<footer>Busted Code created by Michelle (enter phonetic spelling here) + Lorena</footer>
+	
+	<script> 
+		//set function to listen for when sexyButterFunction() is clicked in the content 
+		function sexyButterFunction(){
+			//set variable to that javascript will select when this function is fired
+			var sexyButter = document.getElementById("butter");
+
+			//set condition to hide and show in other words toggle element 
+			//1st check if gif is hidden, if hidden, then show
+			//2nd else if gif is showing, then hide
+			if (sexyButter.style.display == "none" ){
+				//show gif
+				sexyButter.style.display = "block";
+			} else {
+				//hide gif
+				sexyButter.style.display = "none";
+			}
+		}
+
+		//set function to listen for when cuteCookiesFunction() is clicked in the content 
+		function cuteCookiesFunction(){
+			//set variable to that javascript will select when this function is fired
+			var cuteCookies = document.getElementsByClassName("cookies");
+
+			//set condition to hide and show in other words toggle element 
+			//1st check if gif is hidden, if hidden, then show
+			//2nd else if gif is showing, then hide
+			// if (cuteCookies.style.display == "none" ){
+			// 	//show picture
+			// 	cuteCookies.style.display = "block";
+			// } else {
+			// 	//hide picture
+			// 	cuteCookies.style.display = "none";
+			// }
+		}
+
+		// function cuteCookiesFunction() {
+		// 	var cuteCookies = document.getElementsByClassName("cookies");
+		// 	element.classList.toggle("cookies");
+		// }
+		
+	</script>
+</body>
+</html>
