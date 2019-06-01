@@ -2,28 +2,28 @@
 <html>
 <head>
 	<title>Code Busters</title>
-
-	<link rel="stylesheet" type="text/css" href="css/mestyle.css">
-	<script type="text/javascript" src="js/michel.js"></script>
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
 	<!-- Let me know if you like these fonts --> 
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Hind+Guntur" rel="stylesheet">
-
 </head>
 <body>
 	<h1>Welcome Hoomans!</h1>
 
 	<div id="wrapper">
+		<div id="michelle">
+			<h2>Michelle</h2>
+				<button>getElement by ID with a button</button>
+				<button>getElement by class with a button</button>
+		</div>
 
-		<h2>Michelle</h2>
-			<button onclick="tacoDanceFunction('taco')">getElement by ID with a button</button>
-				<div id="taco"><img src="https://media1.tenor.com/images/e051d1974d1319a134223480614ffbc8/tenor.gif?itemid=10576778"></div>
-			<button>getElement by class with a button</button>
-		<h2>Lorena</h2>
-			<button onclick="sexyButterFunction()">getElement by ID with a button toggle</button>
-				<div id="butter"><img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/></div>
-
-			<button>getElement by class with a button</button>
+		<div id="lorena">
+			<h2>Lorena</h2>
+				<div class="row">
+					<button onclick="sexyButterFunction()">getElement by ID with a button toggle</button>
+						<div id="butter">
+							<img src="https://starecat.com/content/wp-content/uploads/butter-on-bread-funny-animation.gif"/>
+						</div>
+				</div>
 
 				<div class="row">
 					<button onclick="cuteCookiesFunction()">getElement by class with a button</button>
@@ -38,7 +38,6 @@
 					</div>
 				</div>
 		</div>						
-
 	</div>
 
 	<footer>Busted Code created by Michelle (enter phonetic spelling here) + Lorena</footer>
@@ -47,7 +46,6 @@
 		//set function to listen for when sexyButterFunction() is clicked in the content 
 		function sexyButterFunction(){
 			//set variable to that javascript will select when this function is fired
-
 			var sexyButter = document.getElementById("butter");
 
 			//set condition to hide and show in other words toggle element 
