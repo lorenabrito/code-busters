@@ -42,18 +42,19 @@ button {
 /* MICHELLE */
 #michelle{
 	flex-grow: 0.5;
-	flex-direction: row;
 	padding: 25px;
 }
 
 /* LORENA */
 #lorena {
 	flex-grow: 0.5;
-	flex-direction: row;
 	padding: 25px;
 }
 
+.row {
+	flex-direction: row;
+	padding: 25px;
+}
 .cookies {
-	display: inline-block;
 	flex-wrap: nowrap;
 }
