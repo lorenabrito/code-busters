@@ -1,0 +1,62 @@
+/*
+Stricking and Simple 
+#0b0c10 / black blue /
+#1f2833 / dark blue /
+#c5c6c7 / gray / 
+#66fcf1 / mint teal /
+#45a29e / teal /
+*/
+
+/* testing testing 1 2 3 */
+
+
+body {
+	background-color: #0b0c10;
+}
+
+h1,
+h2 {
+	font-family:'Caveat', sans-serif;
+	color: white;
+}
+
+p,
+footer {
+	font-family:'Hind+Guntur', sans-serif;
+	color: white;
+}
+
+img {
+	max-width:200px;
+}
+
+button {
+	background-color: #66fcf1;
+	border: none;
+	padding: 10px;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+/* MICHELLE */
+#michelle{
+	flex-grow: 0.5;
+	padding: 25px;
+}
+
+/* LORENA */
+#lorena {
+	flex-grow: 0.5;
+	padding: 25px;
+}
+
+.row {
+	flex-direction: row;
+	padding: 25px;
+}
+.cookies {
+	flex-wrap: nowrap;
+}
